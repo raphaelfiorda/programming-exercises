@@ -1,4 +1,5 @@
 // Função que retorna a raiz digital de dado número "n"
+// ! Refatorar: para se adequar ao somatório ((n - 1) % 9) + 1
 function digitalRoot(n) {
   toNumber = (str) => parseInt(str, 10); // função auxiliar
   toStringList = (int) => int.toString().split(""); // função auxiliar
@@ -13,5 +14,3 @@ function digitalRoot(n) {
 
   return result;
 }
-
-console.log(digitalRoot(1));
